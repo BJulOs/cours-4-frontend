@@ -70,6 +70,9 @@ jobs:
           name: dist
           path: dist
 
+      - name: Install start-server-and-test
+        run: npm install start-server-and-test
+
       - name: Run e2e tests
         run: npm run test:e2e:dev
 
