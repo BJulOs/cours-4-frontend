@@ -37,11 +37,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run linter and formatter
-        run: npm run lint
+      - name: Display npm log
+        run: cat /home/runner/.npm/_logs/2024-01-29T13_51_12_183Z-debug.log
 
       - name: Install pinia
         run: npm install pinia
+
+      - name: Run linter and formatter
+        run: npm run lint
 
       - name: Run tests
         run: npm run test
