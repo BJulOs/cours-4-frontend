@@ -37,9 +37,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Install pinia
-        run: npm install pinia
-
       - name: Run linter and formatter
         run: npm run lint
 
