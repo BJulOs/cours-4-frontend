@@ -11,8 +11,16 @@ describe('Counter Store', () => {
   })
 
   it('increments', () => {
+    const counter = useCounterStore()
+    expect(counter.count).toBe(0)
+    counter.increment()
+    expect(counter.count).toBe(1)
   })
 
   it('decrements', () => {
+    const counter = useCounterStore()
+    expect(counter.count).toBe(0)
+    counter.decrement()
+    expect(counter.count).toBe(-1)
   })
 })
